@@ -23,7 +23,6 @@ function init_slider(carousel) {
 	});
 };
 
-
 jQuery(document).ready(function() {
 	$("#slider").jcarousel({
 		scroll: 1,
