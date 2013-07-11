@@ -15,6 +15,8 @@ ul {
     padding: 0px 20px;
     position: relative;
     z-index: 2;
+    
+    border-bottom: 5px solid #DA590F;
 }
 
 
@@ -36,11 +38,18 @@ h1.logo img{
     display: inline;
     font-size:16px;
     font-family: "微软雅黑", Microsoft YaHei, tahoma,serif;
-    margin-left: 30px;
+    margin-left: 20px;
+    
+    margin-right: 10px;
 }
 
 .menu .menu-item a {
-    color: rgb(255, 255, 255);
+    color: rgb(128, 137, 142);
+    text-decoration: none;
+}
+
+.menu .menu-item a:hover {
+    color: #ffffff;
 }
 
 a:focus {
@@ -138,7 +147,7 @@ a:focus {
 }
 
 .featured{
-    height:150px;
+    height:170px;
     margin-bottom:20px
 }
 
