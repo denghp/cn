@@ -35,94 +35,51 @@
 
 
 
-    <!-- NAVBAR
+    <!-- HEADER
     ================================================== -->
-<div class="container">
+ <header class="header">
+      <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        <h1 class="logo"><a href="/"><img src="assets/img/logo-small.png" alt="SupStat"></a></h1>
+                    </div>
 
-
-			<div class="row">
-				<div class="span12">
-        <div id="logo"><img src="assets/img/logo.png"></div>
-         <div id="slogan" style="margin-left:50px;margin-bottom:20px">北京数博思达信息科技有限公司</div>
-				</div>
-			</div>
-      
-      <div class="row">
-      <div class="span12">
-			<div class="navbar">
-				<div class="navbar-inner">
-
-						 <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a> 
-						<div class="nav-collapse collapse navbar-responsive-collapse">
-							
-              <ul class="nav">
-								<li class="active">
-									<a href="#">主页</a>
-								</li>
-		
-								<li class="dropdown">
-									 <a data-toggle="dropdown" class="dropdown-toggle" href="#">公司信息<strong class="caret"></strong></a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="#">公司动态</a>
-										</li>
-										<li>
-											<a href="#">发展历程</a>
-										</li>
-										<li>
-											<a href="#">团队成员</a>
-										</li>
-
-									</ul>
-								</li> <!-- dropdown END -->
-                
-                								<li class="dropdown">
-									 <a data-toggle="dropdown" class="dropdown-toggle" href="#">业务体系<strong class="caret"></strong></a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="#">产品1</a>
-										</li>
-										<li>
-											<a href="#">产品2</a>
-										</li>
-										<li>
-											<a href="#">产品3</a>
-										</li>
-
-									</ul>
-								</li> <!-- dropdown END -->
-                
-							</ul>
-							<ul class="nav pull-right">
-								<li>
-									<a href="#">公司博客</a>
-								</li>
-								<li class="divider-vertical">
-								</li>
-								<li>
-									<a href="#">订阅</a>
-								</li>			
-							</ul>
-						</div>
-						
-					</div>
-	
-				
-			</div>
-      </div>
-      </div>
- 
+                    <div class="menu span9 pull-right">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="/"><img src="assets/img/home_16.png" style="margin-right:4px" align="middle" />主页</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/product">产品和服务</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/aboutus">关于我们</a>
+                            </li> 
+                            <li class="menu-item">
+                                <a href="/blog">公司博客</a>
+                            </li>
+                            <li class="menu-item highlight-item">
+                                <a href="/contact">联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </header>
+        
+<div class="container">   
+  
    <div class="row">
    <div class="span12 white-panel">
    <div class="row">
 				<div class="span10 offset1" id="slider-show">
-					<div class="carousel slide" id="carousel-431999">
+					<div class="carousel slide" id="myCarousel">
 						<ol class="carousel-indicators">
-							<li data-slide-to="0" data-target="#carousel-431999">
+							<li data-slide-to="0" data-target="#myCarousel">
 							</li>
-							<li data-slide-to="1" data-target="#carousel-431999" class="active">
+							<li data-slide-to="1" data-target="#myCarousel" class="active">
 							</li>
-							<li data-slide-to="2" data-target="#carousel-431999">
+							<li data-slide-to="2" data-target="#myCarousel">
 							</li>
 						</ol>
 						<div class="carousel-inner">
@@ -176,9 +133,8 @@
                   <p class="text-center"><a class="btn btn-info text-center" href="#">查看更多 »</a></p>
 								</div>
 							</div>
-						</div> 
-            
-            <a data-slide="prev" href="#carousel-431999" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-431999" class="right carousel-control">›</a>
+						</div>             
+            <a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a> <a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
 					</div>
 				</div>
         </div>
@@ -275,7 +231,7 @@
       !function ($) {
         $(function(){
           // carousel demo
-          $('#carousel-431999').carousel()
+          $('#myCarousel').carousel()
         })
       }(window.jQuery)
     </script>
