@@ -102,7 +102,7 @@ a:focus {
 
 #slider-show{
     margin-top:40px;
-    margin-bottom:20px;
+    margin-bottom:40px;
 }  
 
 .carousel {
@@ -202,7 +202,7 @@ a:focus {
 
 #top{  
   margin-bottom:20px;
-    
+  
   -webkit-border-radius:0 0 6px 6px;
 	-moz-border-radius:0 0 6px 6px;
 	border-radius:0 0 6px 6px;  
