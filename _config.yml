@@ -1,2 +1,5 @@
 markdown: kramdown
-pygments: false
+permalink: /:categories/:year/:month/:day/:title
+pygments: true
+
+# base_url: /cn
