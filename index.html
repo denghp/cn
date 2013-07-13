@@ -91,7 +91,7 @@ layout: default
 					</h3>
 						<ul>
           {% for nspost in site.categories.news limit:5 %}
-                <li><a href="{{ nspost.url}}" title="{{nspost.title}}">{{nspost.title}}</a></li>
+                <li><a href="{{site.base_url}}{{ nspost.url}}" title="{{nspost.title}}">{{nspost.title}}</a></li>
           {% endfor %}
             </ul>
 						
@@ -115,7 +115,7 @@ layout: default
 					</h3>          
 						<ul>
          {% for bpost in site.categories.blog limit:5 %}
-              <li><a href="{{ bpost.url}}" title="{{bpost.title}}">{{bpost.title}}</a></li>
+              <li><a href="{{site.base_url}}{{ bpost.url}}" title="{{bpost.title}}">{{bpost.title}}</a></li>
         {% endfor %}
             </ul>	    
 					
