@@ -9,7 +9,7 @@ layout: default
           <div class="article">
            <ul>
              {% for bpost in site.categories.blog %}
-              <li><a href="{{ bpost.url}}" title="{{bpost.title}}" target="_blank">{{bpost.title}}</a></li>
+              <li><a href="{{site.base_url}}{{ bpost.url}}" title="{{bpost.title}}" target="_blank">{{bpost.title}}</a></li>
              {% endfor %}
             </ul>	
           </div>
