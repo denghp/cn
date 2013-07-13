@@ -9,26 +9,26 @@
  
 
     <!-- Le styles -->
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/layout.css" rel="stylesheet">
-    <script src="/assets/js/jquery.js"></script>
+    <link href="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/css/layout.css" rel="stylesheet">
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/jquery.js"></script>
  
     <!--
-      <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/assets/css/layout-responsive.css" rel="stylesheet">
+      <link href="{{base_url}}/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{base_url}}/assets/css/layout-responsive.css" rel="stylesheet">
     -->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="/assets/js/html5shiv.js"></script>
+      <script src="{{base_url}}/assets/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href=".//assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{base_url}}/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{base_url}}/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{base_url}}/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{base_url}}/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="./{{base_url}}/assets/ico/favicon.png">
   </head>
 
   <body>
@@ -39,25 +39,25 @@
       <div class="container">
           <div class="row">
               <div class="span3">
-                  <h1 class="logo"><a href="/"><img src="/assets/img/logo-small.png" alt="SupStat"></a></h1>
+                  <h1 class="logo"><a href="/"><img src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/img/logo-small.png" alt="SupStat"></a></h1>
               </div>
 
              <div class="menu span9 pull-right">
                 <ul class="menu-list">                            
                     <li class="menu-item">
-                        <a href="/">主页</a>
+                        <a href="{% if site.base_url%}{{site.base_url}}{% endif %}/">主页</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/product">产品和服务</a>
+                        <a href="{% if site.base_url%}{{site.base_url}}{% endif %}/product">产品和服务</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/about">关于我们</a>
+                        <a href="{% if site.base_url%}{{site.base_url}}{% endif %}/about">关于我们</a>
                     </li> 
                     <li class="menu-item">
-                        <a href="/blog">公司博客</a>
+                        <a href="{% if site.base_url%}{{site.base_url}}{% endif %}/blog">公司博客</a>
                     </li>
                     <li class="menu-item highlight-item">
-                        <a href="/contact">联系我们</a>
+                        <a href="{% if site.base_url%}{{site.base_url}}{% endif %}/contact">联系我们</a>
                     </li>
                 </ul>
             </div>
@@ -85,23 +85,23 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="/assets/js/bootstrap-transition.js"></script>
-    <script src="/assets/js/bootstrap-alert.js"></script>
-    <script src="/assets/js/bootstrap-modal.js"></script>
-    <script src="/assets/js/bootstrap-dropdown.js"></script>
-    <script src="/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="/assets/js/bootstrap-tab.js"></script>
-    <script src="/assets/js/bootstrap-tooltip.js"></script>
-    <script src="/assets/js/bootstrap-popover.js"></script>
-    <script src="/assets/js/bootstrap-button.js"></script>
-    <script src="/assets/js/bootstrap-collapse.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-transition.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-alert.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-modal.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-dropdown.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-tab.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-tooltip.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-popover.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-button.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-collapse.js"></script>
 
-    <script src="/assets/js/bootstrap-carousel.js"></script>
-    <script src="/assets/js/bootstrap-typeahead.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-carousel.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/bootstrap-typeahead.js"></script>
     
    {% for js in page.js %}<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>{% endfor %}
 
-    <script src="/assets/js/holder/holder.js"></script>
+    <script src="{% if site.base_url%}{{site.base_url}}{% endif %}/assets/js/holder/holder.js"></script>
         <script>
       !function ($) {
         $(function(){
