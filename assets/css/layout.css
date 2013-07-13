@@ -19,6 +19,10 @@ ul {
     border-bottom: 5px solid #DA590F;
 }
 
+.header, .footer{
+    width: 100%;
+}
+
 
 h1.logo img{
     height:50px;
