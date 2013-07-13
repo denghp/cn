@@ -6,15 +6,24 @@ ul {
     list-style: disc outside none;
 }
 
+.page-content-wrapper{
+  min-height: 100%;
+  height: auto !important;
+  min-width: 960px;
+  margin: 0px auto 0px;  
+}
+
 .header {
     margin-bottom: 20px;
     display: block;
 
     background-color: rgb(37, 37, 37);
-    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
-    padding: 0px 20px;
     position: relative;
     z-index: 2;
+    
+    -moz-box-shadow:0px 2px 5px #333333;
+    -webkit-box-shadow:0px 2px 5px #333333; 
+    box-shadow:0px 2px 5px #333333;
     
     border-bottom: 5px solid #DA590F;
 }
@@ -306,7 +315,7 @@ a:focus {
   margin-bottom: 40px
 }
 
-/* post模板 */
+/******* post模板 *******/
 
 #content{
   padding: 0px;
