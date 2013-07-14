@@ -1,5 +1,5 @@
-body{
-    background-color:#f6f6f6;
+body{    
+    background-color:#333333;
 }
 
 ul {
@@ -10,14 +10,15 @@ ul {
   min-height: 100%;
   height: auto !important;
   min-width: 960px;
-  margin: 0px auto 0px;  
+  margin: 0px auto 0px; 
+  background-color:#f6f6f6;
 }
 
 .header {
     margin-bottom: 20px;
     display: block;
 
-    background-color: rgb(37, 37, 37);
+    background-color: #252525;
     position: relative;
     z-index: 2;
     
@@ -284,9 +285,9 @@ a:focus {
 }
 
 .footer{
- background-color:#333333;
  color:#ffffff;
- margin-top:0px
+ background-color:#333333;
+ margin-top:0px 
 }
 
 #foot{
