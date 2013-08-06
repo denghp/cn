@@ -54,7 +54,6 @@ div#use_cases{
 .page-content-wrapper{
   min-height: 100%;
   height: auto !important;
-  min-width: 1000px;
   margin: 0px auto; 
   background-color:#f6f6f6;
 }
@@ -491,4 +490,22 @@ img.avatar {
 .color-red{
   color:#DA590F;
 }
+
+/*nav menu*/
+
+/* menu */
+#menu{ margin:0px; padding:0px; list-style:none; color:#ffffff; line-height:55px; display:inline-block; float:left; z-index:1000; }
+#menu{ margin-top:20px}
+#menu a { color:rgb(128, 137, 142);font-size:16px; font-family: "微软雅黑", Microsoft YaHei, tahoma,serif; text-decoration:none; }
+#menu > li { cursor:pointer; float:left; position:relative;padding:0px 10px;line-height:55px;}
+#menu > li a:hover {color:#B0D730;}
+
+/* sub-menus*/
+#menu ul { padding:0px; margin:0px; display:block; display:inline;}
+#menu li ul { position:absolute; left:-10px; top:0px; margin-top:45px; width:200px; line-height:16px; background-color:#252525; color:#0395CC; /* for IE */ display:none; }
+#menu li:hover ul { display:block;}
+#menu li ul li{ display:block; margin:5px 20px; padding: 5px 0px;  border-top: dotted 1px #606060; list-style-type:none; }
+#menu li ul li:first-child { border-top: none; }
+#menu li ul li a { display:block; color:#0395CC; }
+#menu li ul li a:hover { color:#7FCDFE; } 
 
