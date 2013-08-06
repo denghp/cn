@@ -2,91 +2,121 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>北京数博思达信息科技有限公司</title>
+    <title>SupStat Inc.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="陈堰平">
- 
-
+    <meta name="author" content="Chen Yanping">
+    
     <!-- Le styles -->
     <link href="{{site.base_url}}/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="{{site.base_url}}/assets/css/layout.css" rel="stylesheet">
+    <!-- <link href="{{site.base_url}}/assets/css/typo.css" rel="stylesheet"> -->
     <script src="{{site.base_url}}/assets/js/jquery.js"></script>
+    <link type="text/css" href="{{site.base_url}}/assets/css/menu.css" rel="stylesheet" />
+    <script type="text/javascript" src="{{site.base_url}}/assets/js/menu.js"></script>
  
-    <!--
-      <link href="{{site.base_url}}/assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <style type="text/css">
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+    </style>
+    <link href="{{site.base_url}}/assets/css/layout.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="{{site.base_url}}/assets/css/layout-responsive.css" rel="stylesheet">
-    -->
+  
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="{{site.base_url}}/assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{site.base_url}}/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{site.base_url}}/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{site.base_url}}/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="{{site.base_url}}/assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="{{site.base_url}}/assets/ico/favicon.png">
+    <!-- Fav and touch icons -->    
+    <link rel="shortcut icon" href="{{site.base_url}}/assets/ico/favicon.ico">
   </head>
 
-  <body>
+<body>
 
     <!-- HEADER
     ================================================== -->
 <div class="page-content-wrapper">
  <div class="header">
       <div class="container">
-          <div class="row">
-              <div class="span3">
+          <div class="row-fluid">
+              <div class="span4">
                   <h1 class="logo"><a href="{{site.base_url}}/"><img src="{{site.base_url}}/assets/img/logo-small.png" alt="SupStat"></a></h1>
               </div>
 
-             <div class="menu span9">
-                <ul class="menu-list">                            
+             <div id ="menu" class="span8 hidden-phone">
+                <ul class="menu menu-list">                            
                     <li class="menu-item">
-                        <a href="{{site.base_url}}/">主页</a>
+                        <a href="{{site.base_url}}/">Home</a>
                     </li>
+                    <li class="menu-item parent">
+                        <a href="#">Services</a>
+                    <div><ul>                              
+                        <li><a href="#"><span>Data Mining Solutions</span></a></li>
+                        <li><a href="#"><span>Customized Statistical Tools</span></a></li>
+                    </ul></div>
+                   </li>
+                   <li class="menu-item parent">
+                        <a href="#">Training</a>
+                    <div><ul>
+                        <li><a href="#"><span>Online Training</span></a></li>       
+                        <li><a href="#"><span>Public Workshops</span></a></li>
+                        <li><a href="#"><span>Customized Training</span></a></li>
+                    </ul></div>
+                   </li>
+                   <li class="menu-item parent">
+                        <a href="#">Resourse</a>
+                        <div><ul>
+                        <li><a href="#"><span>Free Workshops</span></a></li>       
+                        <li><a href="#"><span>Video Tutorials</span></a></li>
+                        <li><a href="#"><span>White Papers</span></a></li>
+                    </ul></div>
+                   </li>
+                   
+                   <li class="menu-item parent">
+                        <a href="http://blog.supstat.com">Blogs</a>
+                    <div><ul>
+                        <li><a href="http://blog.supstat.com"><span>English Blog</span></a></li>       
+                        <li><a href="http://blog.supstat.com/cn"><span>中文博客</span></a></li>                    
+                    </ul></div>
+                   </li>
+                   <!--
                     <li class="menu-item">
-                        <a href="{{site.base_url}}/product">产品和服务</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{site.base_url}}/about">关于我们</a>
+                        <a href="{{site.base_url}}/about">About</a>
                     </li> 
+                   -->
                     <li class="menu-item">
-                        <a href="{{site.base_url}}/blog">公司博客</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{site.base_url}}/contact">联系我们</a>
+                        <a href="{{site.base_url}}/contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-        
-<div class="container">   
-  
+ 
 {{ content }}
-         
-</div><!-- /.container -->
-
  
  <!-- FOOTER -->
 <div class="footer">
-  <div id="foot" class="container">
-        <p class="pull-right" id="go2top"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 北京数博思达信息科技有限公司</p>
+  <div id="foot" class="container">        
+        <p>&copy; 2013 SupStat Inc.</p>
    </div>
 </div>
+
 </div>
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="{{site.base_url}}/assets/js/bootstrap-transition.js"></script>
+    
     <script src="{{site.base_url}}/assets/js/bootstrap-alert.js"></script>
     <script src="{{site.base_url}}/assets/js/bootstrap-modal.js"></script>
     <script src="{{site.base_url}}/assets/js/bootstrap-dropdown.js"></script>
@@ -98,18 +128,30 @@
     <script src="{{site.base_url}}/assets/js/bootstrap-collapse.js"></script>
 
     <script src="{{site.base_url}}/assets/js/bootstrap-carousel.js"></script>
+    <script src="{{site.base_url}}/assets/js/bootstrap-transition.js"></script>
     <script src="{{site.base_url}}/assets/js/bootstrap-typeahead.js"></script>
-    
+    <script src="{{site.base_url}}/assets/js/jquery.scrollUp.min.js"></script>   
    {% for js in page.js %}<script src="{{site.base_url}}{{ js }}" type="text/javascript" charset="utf-8"></script>{% endfor %}
 
     <script src="{{site.base_url}}/assets/js/holder/holder.js"></script>
-        <script>
+    <script>
       !function ($) {
         $(function(){
           // carousel demo
-          $('#myCarousel').carousel()
+          $('#myCarousel').carousel();
+          
+          $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              topDistance: '300', // Distance from top before showing element (px)
+              topSpeed: 300, // Speed back to top (ms)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '', // Text for element
+              activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+           });
         })
       }(window.jQuery)
-    </script>
+    </script>  
   </body>
 </html>

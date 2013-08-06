@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="row" id="main">
-   <div class="span12 white-panel radius6 box-shadow">
-    <div class="row">
+<div class="row-fluid" id="main">
+   <div class="span12">
+    <div class="row-fluid">
 		   <div id="content" class="span9">
-          <div class="article">
+          <div class="article-content-wrapper">
            <ul>
-             {% for bpost in site.categories.blog limit:5 %}
+             {% for bpost in site.categories.product limit:5 %}
               <li><a href="{{ bpost.url}}" title="{{bpost.title}}" target="_blank">{{bpost.title}}</a></li>
              {% endfor %}
             </ul>	
@@ -18,7 +18,7 @@ layout: default
        </div>
        
        <div id="sidebar" class="span3">
-        sidebar
+        
        </div>
     </div>  
     </div>  
